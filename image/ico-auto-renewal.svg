@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="56px" viewBox="0 0 64 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico-auto-renewal</title>
+    <g id="Domains" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Domains-Page--TLD-select-state" transform="translate(-768.000000, -2829.000000)" stroke-width="3">
+            <g id="Includes" transform="translate(-2.000000, 2572.000000)">
+                <g id="ico-auto-renewal" transform="translate(772.000000, 259.000000)">
+                    <path d="M59.8200218,18.9199854 L55.4061886,28.2010921 L49.0357481,20.1387696 M5.70600655,15.198107 C9.64936294,6.78063342 19.7705133,-0.942264288 31.3450309,0.0943574809 C43.7373134,1.20305788 54.1310521,12.0266473 54.8452858,25.6848926" id="Stroke-1" stroke="#6CADFA"></path>
+                    <path d="M0,33.5250819 L4.41383327,24.2439752 L10.7842738,32.3062978 M54.1140153,37.2469603 C50.1719694,45.6644339 40.0495086,53.3873316 28.4763014,52.3507099 C16.0827084,51.2420095 5.68896979,40.4184201 4.97473608,26.7601747" id="Stroke-3" stroke="#03243B"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

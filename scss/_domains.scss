@@ -1,0 +1,756 @@
+@mixin res992 {
+    @media screen and (max-width:992px) {
+        @content;
+    }
+}
+
+@mixin res772 {
+    @media screen and (max-width:772px) {
+        @content;
+    }
+}
+
+@mixin res480 {
+    @media screen and (max-width:480px) {
+        @content;
+    }
+}
+
+
+$bl: #1D2A3B;
+
+// Header css
+.top1 {
+    font-size: 14px;
+
+    ul {
+        li {
+            a {
+                font-size: 14px;
+
+                img {
+                    height: 15px;
+                }
+            }
+        }
+    }
+}
+
+.menu1 {
+    font-size: 14px;
+
+}
+
+// banner css
+
+.banner1 {
+    background: #84C0FC;
+    padding: 110px 0px;
+
+    @include res772 {
+        padding: 60px 0px;
+    }
+
+    h5 {
+        font-weight: 400;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: $bl;
+
+        @include res992 {
+            font-size: 16px;
+            margin: 0;
+        }
+    }
+
+    .flex {
+        h2 {
+            font-weight: 800;
+            font-size: 55px;
+
+            @include res992 {
+                font-size: 30px;
+
+            }
+
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 15px;
+
+            @include res992 {
+                font-size: 18px;
+
+            }
+        }
+    }
+
+    .form1 {
+        margin: 40px 0px;
+
+        input {
+            box-shadow: none;
+            border: none;
+
+            &:focus {
+                box-shadow: none;
+                border: none;
+            }
+        }
+
+        .drop-btn {
+            font-weight: 800;
+            font-size: 25px;
+            color: #00000088 !important;
+            padding: calc(20px - 6px) 50px;
+
+            @include res992 {
+                padding: calc(15px - 6px) 30px;
+                font-size: 20px;
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        .dropdown-item {
+            font-size: 24px;
+
+        }
+
+        button {
+            border-radius: 0px;
+            padding: 20px 50px;
+            border: none;
+            background: #1D2A3B;
+            color: #ffffff;
+            font-size: 16px;
+
+            @include res992 {
+                padding: 11px 30px;
+            }
+
+        }
+    }
+}
+
+// split-content css
+
+.split-content {
+    padding: 100px 0px;
+
+    @include res772 {
+        padding: 60px 0px;
+    }
+
+    :nth-child(1)h1 {
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 1.3;
+        margin-top: 15px;
+        color: $bl;
+
+        @include res992 {
+            font-size: 40px;
+        }
+
+        @include res772 {
+            font-size: 30px;
+        }
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 22px;
+        padding-top: 20px;
+        color: $bl;
+
+        @include res772 {
+            font-size: 18px;
+        }
+    }
+
+}
+
+// id-cards css
+.id-cards {
+    margin-bottom: 100px;
+
+    .col-6 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .col-md-3 {
+        position: relative;
+        text-align: center;
+        height: 380px;
+        border-top: 1px solid #0000004b;
+        border-left: 1px solid #0000004b;
+
+        &:nth-child(4),
+        &:nth-child(8) {
+            border-right: 1px solid #0000004b;
+        }
+
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(8) {
+            border-bottom: 1px solid #0000004b;
+        }
+
+        @include res992 {
+            height: 250px;
+        }
+
+        @include res480 {
+            border: 1px solid #0000004b;
+        }
+
+        h5 {
+            text-transform: uppercase;
+            background: #1D2A3B;
+            padding: 8px 0px;
+            color: #ffffff;
+
+            @include res992 {
+                font-size: 14px;
+
+            }
+        }
+    }
+
+    .cards {
+        position: absolute;
+        bottom: 70px;
+        width: 100%;
+        margin: auto;
+        background: #ffffff;
+        padding: 0;
+
+        @include res992 {
+            bottom: 30px;
+        }
+
+        img {
+            @include res992 {
+                width: 60px;
+            }
+        }
+
+        .price {
+            p {
+                font-size: 30px;
+                font-weight: 800;
+                color: $bl;
+                padding: 10px 0px;
+
+                @include res992 {
+                    font-size: 20px;
+                }
+
+                sub {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    button {
+        border-radius: 5px;
+        padding: 20px 55px;
+        border: 1px solid black;
+        color: $bl;
+        font-size: 18px;
+        font-weight: 600;
+        background: #ffffff;
+
+        @include res992 {
+            padding: 10px 30px;
+            font-size: 16px;
+        }
+    }
+}
+
+//Domain css
+.domain-icon {
+    padding: 60px 0px;
+    background: #F0FAFF;
+    margin-bottom: 80px;
+
+    :nth-child(1) h1 {
+        font-weight: 800;
+        font-size: 55px;
+        color: $bl;
+        text-align: center;
+        margin-bottom: 40px;
+
+        @include res992 {
+            font-size: 35px;
+        }
+
+        @include res480 {
+            font-size: 30px;
+            text-align: left;
+        }
+    }
+
+    .ibox {
+        margin-top: 20px;
+
+        @include res992 {
+            margin-top: 10px;
+        }
+
+        img {
+            margin-bottom: 15px;
+
+            @include res992 {
+                width: 40px;
+            }
+        }
+
+        h4 {
+            font-size: 22px;
+            color: $bl;
+
+            @include res992 {
+                font-size: 18px;
+            }
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 1;
+
+            @include res480 {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// picture
+.picture {
+    padding: 50px 0px;
+
+    img {
+        max-width: 100%;
+        height: 400px;
+    }
+}
+
+// ad-features
+.ad-features {
+    margin: 80px 0px;
+
+    .sub-title {
+        font-weight: 500;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: $bl;
+
+        @include res772 {
+            font-size: 14px;
+        }
+
+
+    }
+
+    .F-title {
+        font-weight: 800;
+        font-size: 55px;
+        color: $bl;
+        line-height: 2cm;
+        width: 60%;
+        margin: auto;
+
+        @include res992 {
+            font-size: 35px;
+            width: 50%;
+            line-height: 1cm;
+        }
+
+        @include res772 {
+            font-size: 30px;
+            width: 60%;
+        }
+
+        @include res480 {
+            width: 100%;
+        }
+    }
+
+    p {
+        font-size: 21px;
+        color: $bl;
+        padding: 30px 0px;
+        width: 60%;
+        margin: auto;
+
+        @include res992 {
+            font-size: 18px;
+        }
+
+        @include res772 {
+            width: 80%;
+            padding: 20px 0px;
+        }
+
+        @include res480 {
+            width: 100%;
+        }
+    }
+
+    .fbox {
+        padding-right: 15px;
+        margin-bottom: 20px;
+
+        h4 {
+            font-size: 22px;
+            color: $bl;
+            margin: 15px 0px;
+
+            @include res992 {
+                font-size: 20px;
+                margin: 10px 0px;
+            }
+
+            @include res772 {
+                font-size: 18px;
+            }
+
+            @include res480 {
+                font-size: 16px;
+            }
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 18px;
+            letter-spacing: 1;
+            padding: 0px;
+            color: $bl;
+            width: 100%;
+
+            @include res992 {
+                font-weight: 400px;
+                width: 100%;
+                padding: 0px;
+            }
+
+            @include res772 {
+                font-size: 16px;
+            }
+
+            @include res480 {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+//support
+.support {
+    background: #84C0FC;
+    padding: 60px 0px;
+
+    img {
+        padding-left: 30px;
+
+        @include res992 {
+            width: 80%;
+        }
+
+        @include res480 {
+            width: 70%;
+            padding-left: 100px;
+            margin-bottom: 20px;
+
+        }
+    }
+
+    .s-box {
+
+        h6 {
+            font-weight: 400;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: $bl;
+
+            @include res992 {
+                font-size: 14px;
+            }
+        }
+
+        h3 {
+
+            font-weight: 800;
+            font-size: 55px;
+
+            @include res992 {
+                font-size: 35px;
+            }
+
+            @include res772 {
+                font-size: 30px;
+            }
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 15px;
+
+            @include res992 {
+                font-size: 16px;
+
+            }
+        }
+
+        .contact {
+            h4 {
+                color: $bl;
+                font-size: 28px;
+
+                @include res992 {
+                    font-size: 20px;
+                }
+
+                span a {
+                    color: $bl;
+                    border-bottom: 0.2rem solid $bl;
+
+                    &:hover {
+                        color: #2C76DC;
+                        border-color: #2C76DC;
+                    }
+                }
+            }
+        }
+
+        .disc {
+            font-size: 14px;
+        }
+    }
+}
+
+// FAQ
+.FAQ {
+    margin-top: 50px;
+    border-bottom: 1px solid #2C76DC;
+
+    .heading {
+        margin-bottom: 20px;
+
+        h1 {
+            font-weight: 800;
+            font-size: 50px;
+
+            @include res992 {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .f-box {
+        padding: 50px 0px;
+        border-top: 1px solid #2C76DC;
+
+        @include res992 {
+            padding: 50px 10px;
+        }
+
+        @include res480 {
+            flex-direction: column;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            line-height: 1.5;
+            padding-right: 40px;
+            color: $bl;
+
+            @include res992 {
+                font-size: 20px;
+            }
+
+            @include res772 {
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+
+        p {
+            color: $bl;
+
+            a {
+                &:hover {
+                    color: $bl;
+                }
+            }
+
+            @include res992 {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+// Resources.
+.Resources {
+    padding: 80px 0px;
+
+    @include res480 {
+        padding: 20px 0px;
+    }
+
+    :nth-child(1) h1 {
+        font-weight: 800;
+        font-size: 55px;
+        color: $bl;
+        margin-bottom: 30px;
+
+        @include res992 {
+            font-size: 40px;
+        }
+
+        @include res772 {
+            font-size: 30px;
+        }
+
+        @include res480 {
+            width: 80%;
+            margin-right: auto;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+    }
+
+    .r-box {
+        margin: 30px 0px 40px 0px;
+
+        @include res480 {
+            flex-direction: column;
+
+            margin: 20px 0px;
+        }
+
+        a {
+            color: #2c76dc;
+            font-weight: 500;
+            font-size: 26px;
+            border-bottom: 0.3rem solid #2c76dc;
+
+            &:hover {
+                color: $bl;
+                border-color: $bl;
+            }
+
+            @include res992 {
+                font-size: 20px;
+            }
+
+            @include res772 {
+                font-size: 18px;
+            }
+
+            @include res480 {
+                width: 100%;
+                display: block;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+// exit-panel css
+.exit-panel {
+    background: $bl;
+    padding-top: 70px;
+
+    .t-box {
+        .main-title {
+            font-weight: 800;
+            font-size: 55px;
+            color: #ffffff;
+            margin-bottom: 70px;
+
+            @include res992 {
+                font-size: 40px;
+                margin-bottom: 50px;
+            }
+
+            @include res772 {
+                font-size: 30px;
+            }
+        }
+
+        a {
+            font-weight: 700;
+            font-size: 24px;
+            color: #ffffff;
+            background: #2C76DC;
+            padding: 15px 50px;
+            border-radius: 5px;
+
+            @include res992 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .footers-notes {
+        margin-top: 140px;
+        margin-bottom: 30px;
+
+        @include res992 {
+            margin-top: 80px;
+        }
+
+        @include res480 {
+            flex-direction: column;
+
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            color: #ffffff;
+
+            a {
+                color: #2C76DC;
+                font-weight: 700;
+
+                &:hover {
+                    color: #ffffff;
+                }
+
+
+            }
+        }
+
+        .top {
+            @include res480 {
+                text-align: center;
+            }
+            a {
+                font-weight: 700;
+                color: #2C76DC;
+
+                &:hover {
+                    border-bottom: 0.2rem solid #2C76DC;
+
+                }
+            }
+        }
+    }
+}

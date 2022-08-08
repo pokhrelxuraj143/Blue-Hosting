@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import 'domains';
+
+
+@mixin res992 {
+    @media screen and (max-width:992px) {
+        @content;
+    }
+}
+
+@mixin res772 {
+    @media screen and (max-width:772px) {
+        @content;
+    }
+}
+
+@mixin res480 {
+    @media screen and (max-width:480px) {
+        @content;
+    }
+}
+
+$brand: #6C74D2;
+$brand2: #0E6D99;
+
+body {
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    background: #FFFFFF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Header==============>
+
+.top {
+
+    .bg-light {
+        color: #FFFFFF;
+    }
+
+    img,
+    svg {
+        vertical-align: middle;
+        width: 15px;
+    }
+   
+}
+
+.dropdown-menu {
+
+    h4 {
+        color: $brand ;
+    }
+
+    h3 {
+        color: $brand;
+
+        span {
+            color: $brand2;
+        }
+    }
+
+}
+
+.navbar-expand-lg .navbar-nav {
+
+    li {
+        padding-right: 15px;
+    }
+
+    
+}
+
+.menu .FS {
+    li {
+        font-size: 14px;
+    }
+}
+
+// Banner================>
+
+.banner {
+    background: url(../image/background.jpg);
+    width: 100%;
+    height: auto;
+    padding-bottom: 80px;
+    padding-top: 10px;
+    background-size: cover;
+    background-position: center;
+
+    @include res480{
+        text-align: center;
+    }
+
+    h3 {
+        font-weight: 200;
+        font-size: 30px;
+        line-height: 33px;
+
+        span {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 35px;
+        }
+    }
+
+    .btn {
+        background: #17B212;
+        color: #FFFFFF;
+        border-radius: 3px;
+        ;
+        padding: 5px 15px;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 40px;
+        border: none;
+
+        &:hover {
+            background: #06CA00;
+        }
+    }
+
+
+    .container {
+        padding-top: 20px;
+
+        h1 {
+            font-weight: 200;
+            font-size: 55px;
+            line-height: 61px;
+
+            @include res480{
+                font-size:35px;
+            }
+        }
+    }
+
+    .list {
+       padding-top: 20px;
+
+        @include res480{
+            padding: 0px;
+        }
+        li {
+            padding-bottom: 3px;
+            font-size: 20px;
+            line-height: 29px;
+            font-style: normal;
+            font-family: bluehost, "Segoe UI", "Gill Sans", "Gill Sans MT", GillSans, "Trebuchet MS", Arial, sans-serif;
+            ;
+        }
+
+    }
+}
+
+// Title======================>
+
+.title {
+    width: 100%;
+    height: auto;
+    background: #EDF4F8;
+    border-bottom: 1px solid $brand2;
+    font-size: 30px;
+    line-height: 33px;
+    color: $brand;
+
+}
+
+//Testiomonials======================>
+
+.testiomonials {
+    padding: 50px 0px;
+
+    .row{
+        @include res480{
+            flex-direction: column;
+           
+        }
+    }
+
+    .pbox {
+       padding: 0;
+        p {
+            text-align: right;
+            color: black;
+            width: 80%;
+            margin-left: auto;
+
+            @include res480{
+                width: 100%;
+                text-align: center;
+                padding: 0;
+            }
+           
+        }
+    }
+
+    .profile{
+        p{          
+            margin: 0;
+
+            @include res480{
+                text-align: center;
+            }
+        }
+    }
+
+    .col-8{
+        border-right:2px solid $brand2;
+
+        @include res480{
+            border: none;
+        }
+    }
+
+}
+
+// Why-bluehost=====================>
+
+.why-bluehost {
+    width: 100%;
+    height: auto;
+    background: #EDF4F9;
+    border: 1px solid $brand2;
+
+    h3 {
+        font-size: 30px;
+        line-height: 33px;
+        color: $brand2;
+    }
+
+
+    .box {
+        h4 {
+            font-size: 30px;
+            line-height: 33px;
+            color: $brand2;
+            font-weight: 300;
+
+            img {
+                width: 40px;
+                height: auto;
+            }
+        }
+
+    }
+}
+
+//Support========================>
+
+.support {
+    .btn {
+        background: #17B212;
+        color: #FFFFFF;
+        border-radius: 3px;
+        ;
+        padding: 5px 15px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 23px;
+        border: none;
+
+        &:hover {
+            background: #06CA00;
+        }
+
+    }
+
+    h5 {
+        color: $brand2;
+        font-weight: 300;
+        font-size: 55px;
+        line-height: 61px;
+        padding: 20px 0px;
+
+    }
+
+    .xyz {
+        margin-top: 20px;
+
+        li {
+            font-size: 12px;
+
+            a {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+//Footer=====================>
+
+footer {
+    .left {
+        background: #4A83D8;
+        color: #FFFFFF;
+        padding-top: 100px;
+        ul {
+            
+            li {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 18px;
+                padding-bottom: 20px;
+
+                &:nth-child(1){
+                   font-weight: 500;
+
+                   @include res480{
+                    font-size: 20px;
+                    font-weight: 500;
+                   }
+                }
+            }
+        }
+    }
+
+    .right {
+        background: #3575D3;
+        color: #FFFFFF;
+        padding-top: 100px;
+        ul {
+            li {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 18px;
+                padding-bottom: 10px;
+
+                i {
+                    padding-top: 10px;
+                    padding-right: 10px;
+                }
+
+            }
+
+            p {
+                font-size: 12px;
+                padding-top: 10px;
+            }
+        }
+    }
+}
